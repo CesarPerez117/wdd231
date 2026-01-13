@@ -1,0 +1,109 @@
+
+.ham-icon {
+  font-size: 2.5rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  line-height: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  padding: 1rem;
+}
+
+/* This is for transition */
+
+.ham-icon::before {
+  content: "☰"; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  opacity: 1;
+  transform: scale(1);
+
+}
+.ham-icon::after {
+  content: "✖";
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  opacity: 0;
+  transform: scale(0.8);
+}
+
+.ham-icon.open::before {
+  opacity: 0;
+  transform: scale(0.8);
+}
+
+.ham-icon.open::after {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* transition code ends */
+
+
+/* Mobile nav */
+nav {
+  display: none;
+  background-color: var(--color-lightgray);
+}
+
+nav.open {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  border-bottom: 1px solid var(--color-navy);
+}
+
+nav a {
+  display: block;
+  padding: 0.75rem 1rem;
+  text-decoration: none;
+  color: var(--color-navy);
+  font-family: var(--font-body);
+}
+
+nav a.active {
+  background-color: var(--color-coral);
+  color: white;
+  font-weight: bold;
+}
+
+/* Profile */
+.profile {
+  display: block;
+}
+
+.about-me,
+.student-photo {
+  margin-bottom: 2rem;
+}
+
+.about-me h2,
+.student-photo h2 {
+  background-color: var(--color-navy);
+  color: var(--color-coral);
+  padding: 0.5rem;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.student-photo img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}

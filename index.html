@@ -1,11 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=., initial-scale=1.0">
-    <title>WDD 231</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WDD 231 - Cesar Perez</title>
+  <link rel="stylesheet" href="styles/normalize.css" />
+  <link rel="stylesheet" href="styles/small.css" />
+  <link rel="stylesheet" href="styles/larger.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/course.js" defer></script>
 </head>
 <body>
-    <h1>WDD 231 - Cesar P.</h1>
+  <header>
+    <img src="images/idea-logo.png" alt="Idea Logo" width="45" height="45" />
+    <span>Cesar Perez</span>
+    <button id="ham-btn" class="ham-icon" aria-label="Toggle navigation menu"></button>
+  </header>
+
+  <nav>
+    <ul id="nav">
+      <li><a href="#" class="active">Home</a></li>
+      <li><a href="#">Chamber</a></li>
+      <li><a href="#">Final Project</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="profile">
+        <div class="about-me">
+            <h2>About Me</h2>
+            <p>Hello! My name is Cesar Perez. I’m from Dominican Republic. I love playing basketball and doing Mountain Byke (MTB). 
+            I have served a mission in Guatemala City Central. I enjoy spending time with my family and friend, could be just playing 
+            or walking around or helping other doing tiny services.</p>
+        </div>
+
+        <div class="student-photo">
+            <h2>Student Photo</h2>
+            <img src="images/cesarperez.jpg" alt="Cesar Perez" />
+        </div>
+    </section>
+
+    <section class="courses">
+      <h2>Web Certificate Courses</h2>
+      <div class="filter-bar">
+        <button data-filter="All">All</button>
+        <button data-filter="CSE">CSE</button>
+        <button data-filter="WDD">WDD</button>
+      </div>
+      <div class="course-list">
+        
+      </div>
+      <p class="total-credits">Total credits: </p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="social-icons">
+      <a href="https://github.com/CesarPerez117" target="_blank" aria-label="GitHub">
+        <img src="images/github.svg" alt="GitHub" />
+      </a>
+      <a href="https://www.linkedin.com/in/cesar-e-perez-p-958aab22b/" target="_blank" aria-label="LinkedIn">
+        <img src="images/linkedin.svg" alt="LinkedIn" />
+      </a>
+    </div>
+    <p>&copy;<span id="currentyear"></span> | Cesar Perez | Santo Domingo, Dominican Republic</p>
+    <p id="lastModified"></p>
+  </footer>
 </body>
 </html>

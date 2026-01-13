@@ -1,0 +1,171 @@
+:root {
+  --color-navy: #001f3f;     
+  --color-coral: #ff6f61;    
+  --color-lightgray: #f2f2f2; 
+  --font-heading: 'Montserrat', sans-serif;
+  --font-body: 'Open Sans', sans-serif;
+}
+
+
+body {
+  font-family: var(--font-body);
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-lightgray);
+  color: var(--color-navy);
+}
+
+h1, h2, h3 {
+  font-family: var(--font-heading);
+  color: var(--color-navy);
+}
+
+/* Header */
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--color-navy);
+  color: white;
+  padding: 0.75rem 1rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+header img {
+  margin-right: 0.5rem;
+}
+
+header span {
+  font-weight: bold;
+  font-size: 1.2rem;
+  font-family: var(--font-heading);
+}
+
+.ham-icon {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: white;
+}
+
+/* Navigation */
+nav {
+  display: none;
+  background-color: var(--color-lightgray);
+}
+
+nav.open {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  border-bottom: 1px solid var(--color-navy);
+}
+
+nav a {
+  display: block;
+  padding: 0.75rem 1rem;
+  text-decoration: none;
+  color: var(--color-navy);
+  font-family: var(--font-body);
+}
+
+nav a.active {
+  background-color: var(--color-coral);
+  color: white;
+  font-weight: bold;
+}
+
+/* Main */
+main {
+  padding: 1rem;
+}
+
+.about-me,
+.student-photo,
+.courses {
+  margin-bottom: 2rem;
+}
+
+.student-photo img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Courses */
+.filter-bar {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.filter-bar button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: var(--color-coral);
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  font-family: var(--font-heading);
+}
+
+.filter-bar button:hover {
+  background-color: var(--color-navy);
+  color: var(--color-coral);
+}
+
+.course-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.5rem;
+}
+
+.course {
+  padding: 0.75rem;
+  background-color: white;
+  border: 2px solid var(--color-navy);
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  transition: 0.3s;
+}
+
+.course.completed {
+  background-color: var(--color-coral);
+  color: white;
+  border-color: var(--color-coral);
+}
+
+.total-credits {
+  margin-top: 1rem;
+  font-style: italic;
+  color: var(--color-navy);
+}
+
+/* Footer */
+footer {
+  background-color: var(--color-navy);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  border-top: 4px solid var(--color-coral);
+}
+
+.social-icons {
+  margin-bottom: 0.5rem;
+}
+
+.social-icons a img {
+  width: 24px;
+  margin: 0 0.5rem;
+  filter: invert(100%); 
+}
