@@ -1,0 +1,28 @@
+{
+  "familyName": "Perez",
+  "dateMovedIn": "2023-08-15",
+  "numberOfMembers": 4,
+  "visitedByBishopric": true,
+  "members": [
+    {
+      "name": "Cesar Perez",
+      "gender": "Male",
+      "birthdate": "2000-10-01"
+    },
+    {
+      "name": "Julio Perez",
+      "gender": "Male",
+      "birthdate": "1975-06-21"
+    },
+    {
+      "name": "Dariel Perez",
+      "gender": "Male",
+      "birthdate": "2006-07-17"
+    },
+    {
+      "name": "Edgar Perez",
+      "gender": "Male",
+      "birthdate": "2013-10-12"
+    }
+  ]
+}
