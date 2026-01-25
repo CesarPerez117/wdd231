@@ -1,0 +1,97 @@
+/* siteplan.css */
+
+/* General page styles */
+body {
+  font-family: 'Open Sans', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #f9fafc;
+  color: #333;
+}
+
+/* Header & Footer */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  border-bottom: 2px solid #0077b6;
+  padding: 1.5rem;
+
+}
+
+header img {
+  max-width: 120px;
+  height: auto;
+  background-color: #f4e1d2; /* Sand Beige */
+  border-radius: 10px;
+}
+
+header, footer {
+  background-color: #0077b6; /* Ocean Blue */
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+header h1 {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+/* Main content */
+main {
+  max-width: 900px;
+  margin: auto;
+  padding: 2rem;
+}
+
+/* Section headings */
+h2 {
+  color: #0077b6;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 2rem;
+  border-bottom: 2px solid #f77f00; /* Sunset Orange accent */
+  padding-bottom: 0.3rem;
+}
+
+/* Lists */
+ul {
+  margin-left: 1.5rem;
+  padding-left: 0.5rem;
+}
+
+ul li {
+  margin-bottom: 0.5rem;
+}
+
+/* Emphasis styles */
+strong {
+  color: #f77f00; /* Sunset Orange for highlights */
+}
+
+em {
+  color: #555;
+}
+
+/* Branding color swatches (optional visual section) */
+.color-swatch {
+  display: inline-block;
+  width: 80px;
+  height: 40px;
+  margin: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.blue { background-color: #0077b6; }
+.orange { background-color: #f77f00; }
+.beige { background-color: #f4e1d2; }

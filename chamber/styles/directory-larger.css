@@ -1,0 +1,59 @@
+/* Desktop / larger screens */
+@media (min-width: 768px) {
+  /* Show nav as horizontal row */
+  .hamburger { display: none; }
+
+  .main-nav {
+    max-height: none;
+    overflow: visible;
+  }
+
+  .main-nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    align-items: center;
+    background: none;
+    padding: 0;
+  }
+
+  .main-nav a {
+    padding: 0.5rem 0.75rem;
+    color: #fff;
+  }
+
+  header .header-top {
+    padding: 1rem 2rem;
+  }
+
+  .brand h1 { font-size: 1.25rem; }
+
+  /* Members grid for larger screens */
+  .members.grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .members.list {
+    grid-template-columns: 1fr;
+  }
+
+  .member {
+    align-items: center;
+  }
+
+  .member .info {
+    flex: 1;
+  }
+
+  /* Footer grid layout */
+  footer {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    padding: 1rem 2rem;
+    gap: 1rem;
+  }
+
+  .footer-left { text-align: left; }
+  .footer-right { text-align: right; }
+}
