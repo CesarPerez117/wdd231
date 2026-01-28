@@ -1,26 +1,36 @@
-/* Directory JS: fetch data, render grid/list, toggle nav */
+// Directory JS: fetch data, render grid/list, toggle nav
 document.addEventListener('DOMContentLoaded', () => {
   const membersContainer = document.querySelector('#members');
   const gridBtn = document.querySelector('#grid');
   const listBtn = document.querySelector('#list');
-  const hamburger = document.querySelector('.hamburger');
-  const mainNav = document.querySelector('.main-nav');
   const yearEl = document.getElementById('year');
   const lastModifiedEl = document.getElementById('lastModified');
 
+  // Footer info
   yearEl.textContent = new Date().getFullYear();
   lastModifiedEl.textContent = document.lastModified;
+
+// Hamburger button
+const hamburger = document.querySelector('.hamburger');
+const mainNav = document.querySelector('.main-nav');
+
+hamburger.addEventListener('click', () => {
+  const isOpen = mainNav.classList.toggle('open');
+  hamburger.classList.toggle('open');
+  hamburger.setAttribute('aria-expanded', String(isOpen));
+});
+
 
   // Fetch and render members
   async function getMembers() {
     try {
-      const res = await fetch('data/directory.json');
-      if (!res.ok) throw new Error('Failed to load members');
+      const res = await fetch('./data/directory.json'); // safer relative path
+      if (!res.ok) throw new Error(`HTTP error! Status: ${res.status}`);
       const data = await res.json();
       displayMembers(data);
     } catch (err) {
       membersContainer.innerHTML = '<p>Unable to load members at this time.</p>';
-      console.error(err);
+      console.error('Fetch error:', err);
     }
   }
 
@@ -43,9 +53,10 @@ document.addEventListener('DOMContentLoaded', () => {
           <p>${member.phone}</p>
           <p><a href="${member.website}" target="_blank" rel="noopener">Visit Website</a></p>
         </div>
-        <div class="badge" style="background:${badgeColor};">${member.membership === 3 ? 'Gold' : member.membership === 2 ? 'Silver' : 'Member'}</div>
+        <div class="badge" style="background:${badgeColor};">
+          ${member.membership === 3 ? 'Gold' : member.membership === 2 ? 'Silver' : 'Member'}
+        </div>
       `;
-
       membersContainer.appendChild(section);
     });
   }
@@ -63,12 +74,6 @@ document.addEventListener('DOMContentLoaded', () => {
     membersContainer.classList.remove('grid');
     listBtn.setAttribute('aria-pressed', 'true');
     gridBtn.setAttribute('aria-pressed', 'false');
-  });
-
-  // Hamburger toggle (adds/removes .open on nav)
-  hamburger.addEventListener('click', () => {
-    const isOpen = mainNav.classList.toggle('open');
-    hamburger.setAttribute('aria-expanded', String(isOpen));
   });
 
   // Initialize default view
