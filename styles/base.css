@@ -149,12 +149,6 @@ main {
     margin-bottom: 2rem;
 }
 
-.student-photo img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-
 /* PROFILE */
 .profile {
     display: block;

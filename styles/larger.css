@@ -64,11 +64,6 @@
     h1, h2 {
         text-align: center;
     }
-    .student-photo img {
-        max-width: 100%;
-        height: auto;
-        border-radius: 8px;
-    }
 
     .course-list {
         grid-template-columns: repeat(3, 1fr);
