@@ -4,30 +4,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page - WDD231</title>
+    <title>Course Home Page - WDD231</title>
+    <!-- METAS -->
+    <meta property="og:title" content="WDD 231 - Cesar Perez" />
+    <meta property="og:description" content="Explore Applied Technology course homepage. Learn more about web development and projects." />
+    <meta property="og:image" content="https://cesarperez117.github.io/wdd231/images/cesarperez.jpg" />
+    <meta property="og:url" content="https://cesarperez117.github.io/wdd231/index.html" />
+    <!-- LINKS -->
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
+    <!-- SCRIPTS -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
 </head>
 
 <body>
     <header>
-        <img src="images/home.svg" alt="Site Logo" width="512" height="512">
-        <span>Cesar Perez's Title</span>
-        <button id="ham-btn" class="hamburger"></button>
+        <img src="images/idea-logo.png" alt="Site Logo" width="45" height="45">
+        <span>Cesar Perez</span>
+        <button id="ham-btn" class="ham-icon" aria-label="Toggle navigation menu"></button>
     </header>
-    <nav id="nav-bar" class="navigation">
-        <ul>
+
+    <nav>
+        <ul id="nav">
             <li class="current"><a href="#">Home</a></li>
-            <li><a href="#">Chamber Assignment</a></li>
-            <li><a href="#">Final Project</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="#">Final</a></li>
         </ul>
     </nav>
+
     <main>
-        <H1>HOME</H1>
+        <section class="profile">
+            <div class="about-me">
+                <h2>About Me</h2>
+                <p>Hello! My name is Cesar Perez. I’m from Dominican Republic. I love playing basketball and doing Mountain Byke (MTB). 
+                I have served a mission in Guatemala City Central. I enjoy spending time with my family and friend, could be just playing 
+                or walking around or helping other doing tiny services.</p>
+            </div>
+
+            <div class="student-photo">
+                <h2>Student Photo</h2>
+                <img src="images/cesarperez.jpg" alt="Cesar Perez" />
+            </div>
+        </section>
+
+        <section class="courses">
+            <h2>Web Certificate Courses</h2>
+            <div class="filter-bar">
+                <button data-filter="All">All</button>
+                <button data-filter="CSE">CSE</button>
+                <button data-filter="WDD">WDD</button>
+            </div>
+            <div class="course-list">
+        
+            </div>
+            <p class="total-credits">Total credits: </p>
+        </section>
     </main>
-    <footer></footer>
-    <script src="scripts/navigation.js"></script>
+    <footer>
+        <div class="social-icons">
+            <a href="https://github.com/CesarPerez117" target="_blank" arial-label="GitHub">
+                <img src="images/github.svg" alt="GitHub" width="48" height="48">
+            </a>
+            <a href="https://www.linkedin.com/in/cesar-e-perez-p-958aab22b/" target="_blank" aria-label="LinkedIn">
+                <img src="images/linkedin.svg" alt="" width="48" height="48">
+            </a>
+        </div>
+        <p>&copy;<span id="currentyear"></span> | Cesar Perez | Santo Domingo, Dominican Republic</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 
 </html>
