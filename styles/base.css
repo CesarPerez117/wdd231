@@ -1,6 +1,6 @@
 /* COLORS AND FONT*/
 :root {
-  --color-lightgray: #f2f2f2; 
+  --color-lightgray: #f2f2f27c; 
   --font-heading: 'Montserrat', sans-serif;
   --font-body: 'Open Sans', sans-serif;
 
@@ -193,7 +193,7 @@ main {
 .filter-bar button {
     padding: 0.5rem 1rem;
     border: none;
-    background-color: var(--color-brick);
+    background-color: var(--color-hunterGreen);
     color: white;
     cursor: pointer;
     border-radius: 4px;
@@ -201,8 +201,8 @@ main {
 }
 
 .filter-bar button:hover {
-    background-color: var(--color-hunterGreen);
-    color: var(--color-brick);
+    background-color: var(--color-brick);
+    color: white;
 }
 
 .course-list {
@@ -221,9 +221,9 @@ main {
 }
 
 .course.completed {
-    background-color: var(--color-brick);
-    color: white;
-    border-color: var(--color-hunterGreen);
+    background-color: var(--color-lightgray);
+    color: var(--color-hunterGreen);
+    border-color: var(--color-brick);
 }
 
 .total-credits {
