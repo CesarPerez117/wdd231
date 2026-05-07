@@ -18,6 +18,7 @@
         display: flex;
         justify-content: center;
         background-color: var(--color-sageGreen);
+        border-bottom: 4px solid var(--color-hunterGreen);
     }
 
     nav li {
@@ -28,6 +29,7 @@
         padding: 1rem;
         color: white;
         font-weight: bold;
+        
     }
 
     nav ul li a:hover {
