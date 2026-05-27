@@ -4,7 +4,7 @@ const listBtn = document.getElementById("listBtn");
 
 async function getMembers() {
     try {
-        const response = await fetch("data/directory.json");
+        const response = await fetch("data/members.json");
         const data = await response.json();
         displayMembers(data);
     } catch (error) {
