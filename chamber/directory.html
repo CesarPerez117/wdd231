@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber Directory | Caribbean Tourism & Trade Chamber</title>
+    
+    <!-- METAS -->
+    <meta name="title" content="Chamber Directory | Caribbean Tourism & Trade Chamber" />
+    <meta name="author" content="Cesar Perez"/>
+    <meta name="description" content="Directory of businesses and organizations in the Caribbean Tourism & Trade Chamber."/>
+
+    <!-- META FACEBOOK-->
+        <meta property="og:title" content="Chamber Directory | Caribbean Tourism & Trade Chamber" />
+        <meta property="og:description" content="Directory of businesses and organizations in the Caribbean Tourism & Trade Chamber." />
+        <meta property="og:image" content="https://cesarperez117.github.io/wdd231/chamber/images/" />  <!-- FILL OUT !! -->
+        <meta property="og:url" content="https://cesarperez117.github.io/wdd231/chamber/directory.html" />
+        
+    <!-- LINKS -->
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <!-- SCRIPTS -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/directory.js" defer></script>
+</head>
+<body>
+    <div class="head-navigation">
+        <header>
+            <img src="images/logo.webp" alt="Site Logo Image" width="512" height="512">
+            <h1><span>Caribbean Tourism & Trade Chamber</span></h1>
+            <button id="ham-btn" class="hamburger" aria-label="Toggle navigation menu"></button> 
+        </header>
+        
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li><a href="cesarperez117.github.io/wdd231/chamber/home.html">Home</a></li>
+                <li class="current"><a href="cesarperez117.github.io/wdd231/chamber/directory.html">Directory</a></li>
+                <li><a href="cesarperez117.github.io/wdd231/chamber/join.html">Join</a></li>
+                <li><a href="cesarperez117.github.io/wdd231/chamber/Discover.html">Discover</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main>
+        <h1>Business Directory</h1>
+        <section>
+            <div class="view-buttons">
+                <button id="gridBtn">
+                    <img class="btn-img" src="images/grid.svg" alt="Grid Icon Image">
+                </button>
+                <button id="listBtn">
+                    <img class="btn-img" src="images/list.svg" alt="List Icon Image">
+                </button>
+            </div>
+            <div id="membersContainer"></div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="info">
+            <div>Caribbean Tourism & Trade Chamber</div>
+            <div>Respaldo Manolo Tavares #18</div>
+            <div>San. Dom., Rep. Dom.</div>
+            <div>info@caribbeantt.org</div>
+            <div>+1 (809) 123 4567</div>
+        </div>
+        <div class="social">
+            <a href="https://github.com" target="_blank"><img src="images/github.svg" alt="GitHub Logo Image" width="16"
+                    height="16"></a>
+            <a href="https://www.linkedin.com" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn Logo Image" width="16"
+                    height="16"></a>
+            <a href="https://www.instagram.com" target="_blank"><img src="images/instagram.svg" alt="Instagram Logo Image" width="16"
+                    height="16"></a>
+            <a href="https://www.facebook.com" target="_blank"><img src="images/facebook.svg" alt="Facebook Logo Image" width="16"
+                    height="16"></a>
+        </div>
+        <div class="info">
+            <div>Cesar Perez</div>
+            <div>WDD 231 Web development</div>
+            <div>&copy;<span id="currentyear"></span> Caribbean Tourism & Trade Chamber</div>
+            <div id="lastModified"></div>
+        </div>
+    </footer>
+</body>
+</html>
