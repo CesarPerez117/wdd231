@@ -98,7 +98,6 @@ footer {
     padding: 0;
     text-align: center;
     font-family: var(--font-body);
-    font-style: bold;
     font-size: 1.1rem;
     border: var(--color-aquaGreen) solid 2px;
     background-color: var(--color-white);
