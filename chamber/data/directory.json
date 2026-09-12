@@ -1,0 +1,50 @@
+[
+  {
+    "name": "JW Marriott Hotel Santo Domingo",
+    "address": "Winston Churchill Avenue No. 93, Ensanche Piantini, Santo Domingo, 10501",
+    "phone": "+1 (809) 807-1717",
+    "website": "https://www.marriott.com/es/hotels/sdqjw-jw-marriott-hotel-santo-domingo/overview/?nst=paid&cid=PAI_GLB0004YFY_GLE000CD17_GLF000R1BQ&nst=paid&gclsrc=aw.ds&gad_source=1&gad_campaignid=22340407196&gclid=Cj0KCQiA-NHLBhDSARIsAIhe9X2GFIDXXy9gsCcFril_PmckpkE_FhrYCAi4pLgSWPNwn36OIlWDI6MaAomeEALw_wcB",
+    "image": "jwmarriott-logo.png",
+    "membership": 3
+  },
+  {
+    "name": "Sheraton Santo Domingo Hotel",
+    "address": "Av. George Washington 365, Santo Domingo 10205",
+    "phone": "+1 (809) 221-6666",
+    "website": "https://www.marriott.com/es/hotels/sdqds-sheraton-santo-domingo-hotel/overview/?nst=paid&cid=PAI_GLB0004YFY_GLE000CD17_GLF000R1BQ&nst=paid&gclsrc=aw.ds&gad_source=1&gad_campaignid=22340397032&gclid=Cj0KCQiA-NHLBhDSARIsAIhe9X0A_-UDwI-4Qvg-XcpWrRynl3l1JBB7mWTPCXKbl6p3k2SCkXblzWQaAiM2EALw_wcB",
+    "image": "sheraton-logo.webp",
+    "membership": 2
+  },
+  {
+    "name": "Holiday Inn Santo Domingo",
+    "address": "Av. Abraham Lincoln 856, Santo Domingo 10105",
+    "phone": "+1 (809) 621-0000",
+    "website": "https://www.ihg.com/holidayinn/hotels/es/es/santo-domingo/sdqex/hoteldetail",
+    "image": "holiday-logo.png",
+    "membership": 1
+  },
+  {
+    "name": "Transporte APTPRA",
+    "address": "C. Juan Sánchez Ramírez 31, Santo Domingo 10205",
+    "phone": "+1 (809) 221-4422",
+    "website": "https://aptpra.com.do/",
+    "image": "aptpra-logo.jpg",
+    "membership": 1
+  },
+  {
+    "name": "Cámara de Comercio y Producción de Santo Domingo",
+    "address": "Av. 27 de Febrero núm. 228, Torre Friusa, La Esperilla, Santo Domingo",
+    "phone": "+1 (809) 682-2688",
+    "website": "https://camarasantodomingo.do/",
+    "image": "camara-comercio-sd.png",
+    "membership": 3
+  },
+  {
+    "name": "Brickpoint Business Cluster",
+    "address": "Santo Domingo, Dominican Republic",
+    "phone": "+1 (809) 555-7890",
+    "website": "https://brickpoint.do/",
+    "image": "brickpoint.png",
+    "membership": 2
+  }
+]
