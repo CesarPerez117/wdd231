@@ -3,7 +3,7 @@ const city = "Santo Domingo";
 
 async function getWeather() {
   try {
-    const url = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=metric&lang=es`;
+    const url = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=metric&lang=en`;
     const response = await fetch(url);
     const data = await response.json();
 
@@ -19,7 +19,7 @@ async function getWeather() {
     [8, 16, 24].forEach((i, idx) => {
       const fData = data.list[i];
       const date = new Date(fData.dt_txt);
-      const dayName = date.toLocaleDateString("es-ES", { weekday: "long" });
+      const dayName = date.toLocaleDateString("en-US", { weekday: "long" });
 
       const card = document.createElement("div");
       card.className = "forecast-day";
