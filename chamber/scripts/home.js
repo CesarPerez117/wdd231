@@ -56,7 +56,7 @@ async function loadSpotlights() {
         <img src="images/${m.image}" alt="${m.name} logo" loading="lazy">
         <p><strong>Tel:</strong> ${m.phone}</p>
         <p><strong>Dirección:</strong> ${m.address}</p>
-        <p><a href="${m.website}" target="_blank">Visitar sitio</a></p>
+        <p><a href="${m.website}" target="_blank">Visit Website</a></p>
         <p class="membership-level">Gold Member</p>
       `;
       container.appendChild(card);
