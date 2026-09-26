@@ -11,6 +11,12 @@
     display: none; 
   }
 
+  main {
+  max-width: 2444px;   /* ancho máximo para el contenido */
+  margin: 0 auto;      /* centra el contenido */
+  padding: 1rem 2rem;  /* espacio interno */
+  }
+
   .main-nav {
     position: static;
     max-height: none;
@@ -23,42 +29,56 @@
     gap: 1rem;
     padding: 0;
     margin: 0;
-    background: transparent;
   }
 
   .main-nav a {
     padding: 0.5rem 0.75rem;
     color: #fff;
     font-weight: 600;
-    background: transparent;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+  }
+
+  .main-nav a:hover {
+    background: var(--orange);
+    color: #fff;
   }
   
   header {
-  display: grid;
-  grid-template-columns: auto 1fr auto;
-  align-items: center;
-  max-width: 1080px;
-  margin: 0 auto;
-  padding: 1rem 2rem;
-  background: var(--blue);
-  color: #fff;
-  gap: 1rem;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    background: var(--blue);
+    color: #fff;
   }
 
   header, footer {
-  width: 100%;
-  padding: 2rem 4rem; /* wider left/right padding */
-  box-sizing: border-box;
+    width: 100%;
+    padding: 2rem 4rem; 
+    box-sizing: border-box;
   }
 
+  .hero-img {
+    width: 100%;
+    height: auto;
+    max-height: 450px; 
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+
+
   .header-top {
-  display: grid;
-  grid-template-columns: auto 1fr auto;
-  align-items: center;
-  max-width: 1080px;
-  margin: 0 auto;
-  padding: 1rem 2rem;
-  gap: 1rem
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    gap: 1rem
   }
   .logo {
     flex: 0 0 auto;
@@ -114,15 +134,15 @@
 
   /* Footer grid layout */
   footer {
-  display: grid;
-  grid-template-columns: 1fr auto 1fr;
-  align-items: center;
-  padding: 1rem 2rem;
-  gap: 1rem;
-  max-width: 1080px;
-  margin: 0 auto;
-  background: var(--blue);
-  color: #fff;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    padding: 1rem 2rem;
+    gap: 1rem;
+    max-width: 100%;
+    margin: 0 auto;
+    background: var(--blue);
+    color: #fff;
   }
 
   .footer-left,
@@ -140,5 +160,68 @@
     width: 32px;
     height: 32px;
     filter: invert(100%);
+  }
+
+  /* Home Page Layout */
+
+.home-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* dos columnas */
+  gap: 1.5rem;
+}
+
+.home-grid .events,
+.home-grid .current-weather {
+  background: #fff;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+  /* Forecast layout for larger screens */
+.forecast {
+  grid-column: 1 / -1; /* se extiende de la primera a la última columna */
+  background: #fff;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+  
+#forecast-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
+  .forecast-day {
+    padding: 1.5rem;
+    text-align: center;
+  }
+
+  .forecast-day h3 {
+    font-size: 1.2rem;
+  }
+
+  /* Spotlights layout for larger screens */
+  .spotlights {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .spotlight-card {
+    padding: 1.5rem;
+    text-align: left;
+  }
+
+  .spotlight-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .spotlight-card img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 0.75rem;
   }
 }

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber Home | Caribbean Tourism & Trade Chamber</title>
+
+    <meta name="description"
+        content="">
+    <meta name="author" content="Cesar Perez">
+    <link rel="icon" href="images/favicon.ico">
+
+    <meta property="og:title" content="Caribbean Tourism & Trade Chamber">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://cesarperez117.github.io/wdd231/chamber/index.html">
+    <meta property="og:image" content="images/join-site">
+    <meta property="og:description"
+        content="">
+
+    <link rel="stylesheet" href="styles/directory-normalize.css">
+    <link rel="stylesheet" href="styles/directory-small.css">
+    <link rel="stylesheet" href="styles/directory-larger.css" media="(min-width: 700px)">
+
+    <script src="scripts/home.js" defer></script>
+    <script src="scripts/directory.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="brand">
+            <img src="images/logo.png" alt="Chamber Logo" class="logo">
+            <h1>Caribbean Tourism & Trade Chamber</h1>
+        </div>
+        <button class="hamburger" aria-label="Toggle Menu"></button>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <section class="hero">
+            <picture>
+                <source media="(max-width: 600px)" srcset="images/santo-domingo-hero.jpeg">
+                <img src="images/santo-domingo-hero.jpeg" alt="Hero Banner" class="hero-img">
+            </picture>
+            <div class="hero-box">
+                <a href="join.html" class="cta-button">Join the Chamber</a>
+            </div>
+        </section>
+
+        <div class="home-grid">
+            <section class="card events">
+                <h2>Events</h2>
+
+                <div class="card-content">
+                    <article>
+                        <h3>Anniversary of the Chamber</h3>
+                        <p>Thursday Oct 1st | 6:00 PM</p>
+                    </article>
+
+                    <article>
+                        <h3>Sheraton Anniversary</h3>
+                        <p>Thursday, Oct 30th | 10:00 AM</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="card current-weather">
+                <h2>Current Weather</h2>
+                <div id="weather-info" class="card-content">
+                    <div class="weather-main">
+                        <img id="weather-icon" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+                            alt="Weather icon">
+                        <span id="current-temp">--</span>
+                    </div>
+                    <p id="weather-desc">Loading...</p>
+                    <p>Humidity: <span id="humidity">--</span>%</p>
+                </div>
+            </section>
+
+            <section class="card forecast">
+                <h2>Weather Forecast</h2>
+                <div id="forecast-container" class="card-content">
+                </div>
+            </section>
+        </div>
+
+        <section class="spotlights-wrapper">
+            <h2>Business Spotlights</h2>
+            <div id="spotlight-container" class="spotlights">
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-contact">
+                <p><strong>Caribbean Tourism & Trade Chamber</strong></p>
+                <p>Santo Domingo, Dominican Republic</p>
+                <p>info@caribbeantandt.org | +1 (809) 123-4567</p>
+            </div>
+
+            <div class="footer-info">
+                <p>&copy; <span id="year"></span> | Cesar Perez | WDD 231</p>
+                <p id="lastModified"></p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

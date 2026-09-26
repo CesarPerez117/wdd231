@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Weather Today and Tomorrow</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #74ebd5, #ACB6E5);
+      color: #333;
+      text-align: center;
+      padding: 20px;
+    }
+    h1 {
+      margin-bottom: 20px;
+    }
+    .weather-container {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+    .day {
+      background: rgba(255, 255, 255, 0.8);
+      padding: 20px;
+      border-radius: 10px;
+      width: 200px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    }
+    .day img {
+      width: 80px;
+      height: 80px;
+    }
+    .temp {
+      font-size: 1.5em;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Weather Today and Tomorrow</h1>
+  <div class="weather-container">
+    <div class="day" id="today">
+      <h2>Today</h2>
+      <img id="icon-today" alt="icono clima">
+      <div class="temp" id="temp-today"></div>
+    </div>
+    <div class="day" id="tomorrow">
+      <h2>Tomorrow</h2>
+      <img id="icon-tomorrow" alt="icono clima">
+      <div class="temp" id="temp-tomorrow"></div>
+    </div>
+  </div>
+
+  <script>
+    const apiKey = "d74061a11429483e21b51e27c16c2eb9";
+    const city = "Santo Domingo"; 
+
+    async function getWeather() {
+     
+      const url = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=metric&lang=es`;
+      const response = await fetch(url);
+      const data = await response.json();
+
+   
+      const todayData = data.list[0];
+      const todayTemp = todayData.main.temp;
+      const todayIcon = todayData.weather[0].icon;
+
+      document.getElementById("temp-today").textContent = `${todayTemp.toFixed(1)} °C`;
+      document.getElementById("icon-today").src = `https://openweathermap.org/img/wn/${todayIcon}@2x.png`;
+
+  
+      const tomorrowData = data.list[8];
+      const tomorrowTemp = tomorrowData.main.temp;
+      const tomorrowIcon = tomorrowData.weather[0].icon;
+
+      document.getElementById("temp-tomorrow").textContent = `${tomorrowTemp.toFixed(1)} °C`;
+      document.getElementById("icon-tomorrow").src = `https://openweathermap.org/img/wn/${tomorrowIcon}@2x.png`;
+    }
+
+    getWeather();
+  </script>
+</body>
+</html>
