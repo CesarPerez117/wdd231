@@ -20,6 +20,7 @@ async function getWeather() {
       const fData = data.list[i];
       const date = new Date(fData.dt_txt);
       const dayName = date.toLocaleDateString("en-US", { weekday: "long" });
+      const capitalizedDay = dayName.charAt(0).toUpperCase() + dayName.slice(1);
 
       const card = document.createElement("div");
       card.className = "forecast-day";

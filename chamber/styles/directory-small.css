@@ -118,9 +118,10 @@ header {
   transition: max-height 300ms ease;
   z-index: 1000;
   width: 200px;
+  padding-right: 2rem;
 }
 .main-nav.open {
-  max-height: 400px;
+  max-height: 500px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.2)
 }
 .main-nav ul {

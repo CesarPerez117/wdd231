@@ -2,25 +2,35 @@
 @media (min-width: 768px) {
   /* Show nav as horizontal row */
   .container {
-  max-width: auto;
+  max-width: 100%;
   margin: 0 auto;
   padding: 1rem;
+  box-sizing: border-box;
   }
 
   .hamburger { 
     display: none; 
   }
 
+  body {
+  margin: 0;
+  overflow-x: hidden;
+  }
+
   main {
-  max-width: 2444px;   /* ancho máximo para el contenido */
-  margin: 0 auto;      /* centra el contenido */
-  padding: 1rem 2rem;  /* espacio interno */
+  max-width: 1080px;   
+  margin: 0 auto;     
+  padding: 1rem 2rem; 
   }
 
   .main-nav {
+    display: flex;
+    justify-content: flex-end;
     position: static;
     max-height: none;
     overflow: visible;
+    width: auto;
+    max-width: 100%;
   }
 
   .main-nav ul {
@@ -161,6 +171,7 @@
     height: 32px;
     filter: invert(100%);
   }
+
 
   /* Home Page Layout */
 
