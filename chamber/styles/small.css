@@ -8,7 +8,11 @@
 }
 
 /* Base layout */
-html, body { height: 100%; }
+html,
+body {
+  height: 100%;
+}
+
 body {
   font-family: 'Open Sans', Arial, sans-serif;
   background: var(--light);
@@ -27,6 +31,7 @@ body {
   border-radius: 8px;
   padding: 0.25rem;
 }
+
 .page-title {
   margin-left: 1rem;
   flex: 1;
@@ -39,6 +44,7 @@ body {
   margin: 0;
   line-height: 1.4;
 }
+
 header {
   background: var(--blue);
   color: #fff;
@@ -61,8 +67,8 @@ header {
 .hero-img {
   width: 100%;
   height: auto;
-  max-height: 300px; 
-  object-fit: cover; 
+  max-height: 300px;
+  object-fit: cover;
   border-radius: 8px;
 }
 
@@ -93,11 +99,15 @@ header {
 
 /* Hamburger */
 .hamburger.open::before {
-  content: "✖"; /* Unicode X */
+  content: "✖";
+  /* Unicode X */
 }
+
 .hamburger::before {
-  content: "☰"; /* Hamburger icon */
+  content: "☰";
+  /* Hamburger icon */
 }
+
 .hamburger {
   font-size: 1.8rem;
   background: none;
@@ -109,7 +119,8 @@ header {
 
 .main-nav {
   position: absolute;
-  top: 60px; /* below header */
+  top: 60px;
+  /* below header */
   right: 1rem;
   background: var(--blue);
   border-radius: 8px;
@@ -120,22 +131,26 @@ header {
   width: 200px;
   padding-right: 2rem;
 }
+
 .main-nav.open {
   max-height: 500px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2)
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2)
 }
+
 .main-nav ul {
   display: flex;
   flex-direction: column;
   margin: 0;
   padding: 0.5rem 0;
 }
+
 .main-nav a {
   display: block;
   padding: 0.8rem 1rem;
   color: #fff;
   font-weight: 600;
 }
+
 .main-nav a:hover {
   color: var(--orange);
 }
@@ -164,7 +179,7 @@ h2 {
 
 .view-toggle button {
   background: #fff;
-  border: 1px solid rgba(0,0,0,0.08);
+  border: 1px solid rgba(0, 0, 0, 0.08);
   padding: 0.5rem 0.75rem;
   border-radius: 6px;
   cursor: pointer;
@@ -198,7 +213,7 @@ h2 {
   background: #fff;
   border-radius: 8px;
   padding: 0.75rem;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
   display: flex;
   gap: 0.75rem;
   align-items: flex-start;
@@ -260,25 +275,6 @@ footer {
   margin: 0.4rem 0;
 }
 
-.footer-center {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  margin: 0.4rem 0;
-}
-
-.footer-center img {
-  width: 48px;
-  height: 48px;
-  filter: invert(100%);
-  transition: transform 0.25s ease, filter 0.25s ease;
-}
-
-.footer-center img:hover {
-  transform: scale(1.15);
-  filter: invert(60%) sepia(100%) saturate(300%) hue-rotate(10deg);
-}
-
 /* Home Page Layout */
 
 .cta-button {
@@ -302,7 +298,7 @@ footer {
   background: #fff;
   border-radius: 8px;
   padding: 1rem;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   margin-bottom: 1rem;
 }
 
@@ -328,7 +324,7 @@ footer {
   background: #fff;
   border-radius: 8px;
   padding: 1rem;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 
@@ -362,7 +358,7 @@ footer {
   background: #fff;
   border-radius: 8px;
   padding: 1rem;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 
@@ -397,4 +393,127 @@ footer {
   margin-top: 0.5rem;
   font-weight: bold;
   color: var(--orange);
+}
+
+/* Join Page */
+
+/* Membership form (mobile) */
+.join-grid-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.form-section {
+  background: #fff;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+#membership-form label {
+  display: block;
+  margin: 1rem 0 0.5rem 0;
+  font-weight: 600;
+  color: var(--blue);
+}
+
+#membership-form input,
+#membership-form select,
+#membership-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+.submit-btn {
+  background-color: var(--blue);
+  color: #fff;
+  padding: 1rem;
+  border: none;
+  border-radius: 6px;
+  width: 100%;
+  margin-top: 1.5rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: var(--orange);
+}
+
+/* Membership cards (mobile) */
+.levels-section {
+  margin-top: 2rem;
+}
+
+.level-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.level-card h3 {
+  font-size: 1.2rem;
+  color: var(--blue);
+  margin-bottom: 0.75rem;
+}
+
+.open-modal {
+  background-color: var(--orange);
+  border: none;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.open-modal:hover {
+  background-color: #e76f00;
+}
+
+/* Membership modals (mobile) */
+.membership-modal {
+  border: none;
+  border-radius: 8px;
+  padding: 1.5rem;
+  max-width: 90%;
+}
+
+.membership-modal::backdrop {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.close-modal {
+  float: right;
+  border: none;
+  background: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Thank You Page (mobile) */
+.thankyou-container {
+  text-align: center;
+  padding: 2rem;
+}
+
+.thankyou-container h1 {
+  color: var(--blue);
+  margin-bottom: 1rem;
+}
+
+.thankyou-container p {
+  margin: 0.5rem 0;
 }

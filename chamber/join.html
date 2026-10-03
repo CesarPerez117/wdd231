@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caribbean Tourism & Trade Chamber | Join Us</title>
+
+    <meta name="description"
+        content="Join the Caribbean Tourism & Trade Chamber to grow your business. Choose from NP, Bronze, Silver, or Gold membership levels and access exclusive benefits.">
+    <meta name="author" content="Cesar Perez">
+    <link rel="icon" href="images/favicon.ico">
+
+    <meta property="og:title" content="Join the Caribbean Tourism & Trade Chamber Today">
+    <meta property="og:type" content="website">
+    <meta property="og:description"
+        content="Empower your organization by joining Santo Domingo's premier business network. Discover membership perks, from directory listings to premium advertising.">
+    <meta property="og:image" content="images/join-site.webp">
+    <meta property="og:url" content="https://cesarperez117.github.io/wdd231/chamber/join.html">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css" media="(min-width: 700px)">
+
+    <script src="scripts/home.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+    <script src="scripts/directory.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="brand">
+            <img src="images/logo.png" alt="Chamber Logo" class="logo">
+            <h1>Caribbean Tourism & Trade Chamber</h1>
+        </div>
+        <button class="hamburger" aria-label="Toggle Menu"></button>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="https://cesarperez117.github.io/wdd231/chamber/index.html">Home</a></li>
+                <li><a href="https://cesarperez117.github.io/wdd231/chamber/directory.html">Directory</a></li>
+                <li><a href="https://cesarperez117.github.io/wdd231/chamber/join.html" class="active">Join</a></li>
+                <li><a href="https://cesarperez117.github.io/wdd231/chamber/discover.html">Discover</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main class="join-grid-container">
+        <h1>Membership Application</h1>
+
+        <section class="form-section">
+            <form method="get" action="thankyou.html" id="membership-form">
+
+                <label>First Name
+                    <input type="text" name="fname" required autocomplete="given-name">
+                </label>
+
+                <label>Last Name
+                    <input type="text" name="lname" required autocomplete="family-name">
+                </label>
+
+                <label>Title
+                    <input type="text" name="org-title" pattern="[A-Za-z\s\-]{7,}">
+                </label>
+
+                <label>Email
+                    <input type="email" name="email" required placeholder="john89@gmail.com">
+                </label>
+
+                <label>Cell Phone
+                    <input type="tel" name="phone" required placeholder="809-555-1234">
+                </label>
+
+                <label>Organization
+                    <input type="text" name="organization" required>
+                </label>
+
+                <label>Membership Level
+                    <select name="level" required>
+                        <option value="" disabled selected>Select...</option>
+                        <option value="np">NP Membership</option>
+                        <option value="bronze">Bronze Membership</option>
+                        <option value="silver">Silver Membership</option>
+                        <option value="gold">Gold Membership</option>
+                    </select>
+                </label>
+
+                <label>Organization Description
+                    <textarea name="description"></textarea>
+                </label>
+
+                <input type="hidden" name="timestamp" id="timestamp">
+
+                <input type="submit" value="Apply for Membership" class="submit-btn">
+            </form>
+        </section>
+
+        <section class="levels-section">
+            <h2>Available Membership Levels</h2>
+            <div id="cards-container">
+                <div class="level-card" id="card-np">
+                    <h3>NP Membership</h3>
+                    <button type="button" class="open-modal" data-target="modal-np">Learn More</button>
+                </div>
+
+                <div class="level-card" id="card-bronze">
+                    <h3>Bronze Membership</h3>
+                    <button type="button" class="open-modal" data-target="modal-bronze">Learn More</button>
+                </div>
+
+                <div class="level-card" id="card-silver">
+                    <h3>Silver Membership</h3>
+                    <button type="button" class="open-modal" data-target="modal-silver">Learn More</button>
+                </div>
+
+                <div class="level-card" id="card-gold">
+                    <h3>Gold Membership</h3>
+                    <button type="button" class="open-modal" data-target="modal-gold">Learn More</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Membership Modals -->
+    <dialog id="modal-np" class="membership-modal">
+        <button class="close-modal">&times;</button>
+        <h2>NP Membership</h2>
+        <p>Cost: Free</p>
+        <ul>
+            <li>Business Directory Listing</li>
+            <li>Community Calendar Access</li>
+            <li>Basic Networking Opportunities</li>
+        </ul>
+    </dialog>
+
+    <dialog id="modal-bronze" class="membership-modal">
+        <button class="close-modal">&times;</button>
+        <h2>Bronze Membership</h2>
+        <p>Cost: $50 / year</p>
+        <ul>
+            <li>Directory Listing</li>
+            <li>Social Media Mentions</li>
+            <li>Quarterly Business Trainings</li>
+        </ul>
+    </dialog>
+
+    <dialog id="modal-silver" class="membership-modal">
+        <button class="close-modal">&times;</button>
+        <h2>Silver Membership</h2>
+        <p>Cost: $150 / year</p>
+        <ul>
+            <li>Enhanced Directory Placement</li>
+            <li>Event Discounts (10%)</li>
+            <li>Monthly Advertising Spotlights</li>
+        </ul>
+    </dialog>
+
+    <dialog id="modal-gold" class="membership-modal">
+        <button class="close-modal">&times;</button>
+        <h2>Gold Membership</h2>
+        <p>Cost: $300 / year</p>
+        <ul>
+            <li>Homepage Feature Advertising</li>
+            <li>Full Event Sponsorships</li>
+            <li>VIP Networking Luncheons</li>
+            <li>Priority Support</li>
+        </ul>
+    </dialog>
+
+    <footer>
+        <div class="footer-left">
+            <p><strong>Caribbean Tourism & Trade Chamber</strong></p>
+            <p>Santo Domingo, Dominican Republic</p>
+            <p>info@caribbeantandt.org | +1 (809) 123-4567</p>
+        </div>
+        <div class="footer-right">
+            <p>&copy; <span id="year"></span> | Cesar Perez | WDD 231</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+
+
+
+</body>
+</html>
