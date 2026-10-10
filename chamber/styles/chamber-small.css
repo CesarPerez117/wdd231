@@ -517,3 +517,78 @@ footer {
 .thankyou-container p {
   margin: 0.5rem 0;
 }
+
+/* Discover Page (mobile) */
+.discover-grid {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.discover-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
+
+}
+
+.discover-card h2 {
+  font-size: 1.1rem;
+  color: var(--blue);
+  margin-bottom: 0.5rem;
+}
+
+.discover-card figure {
+  margin: 0;
+}
+
+.discover-card img {
+  width: 100%;
+  max-width: 300px;
+  max-height: 230px;
+  height: auto;
+  border-radius: 6px;
+  margin: 0 auto 0.75rem;
+  display: block;
+}
+
+.discover-card address {
+  font-style: normal;
+  color: #555;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.discover-card p {
+  font-size: 0.9rem;
+  color: #444;
+  margin-bottom: 0.75rem;
+}
+
+.discover-card button {
+  background: var(--orange);
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.discover-card button:hover {
+  background: #e76f00;
+}
+
+#visit-message {
+  background: var(--orange);
+  color: #fff;
+  padding: 0.75rem;
+  border-radius: 6px;
+  text-align: center;
+  margin: 1rem 0;
+  font-weight: 600;
+}
+
