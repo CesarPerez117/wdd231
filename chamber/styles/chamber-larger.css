@@ -282,6 +282,21 @@
     padding: 1.5rem;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .discover-card:hover {
+    transform: translateY(-6px); /* subtle lift */
+    box-shadow: 0 6px 16px rgba(0,0,0,0.15); /* deeper shadow */
+  }
+
+  .discover-card:hover h2 {
+    color: var(--orange); /* highlight title on hover */
+  }
+
+  .discover-card:hover button {
+    background: var(--blue); /* change button color */
+    color: #fff;
   }
 
   .discover-card h2 {
