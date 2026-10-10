@@ -268,10 +268,10 @@
     font-size: 1.1rem;
   }
 
-  /* Discover grid (desktop) */
+  /* Discover (large) */
   .discover-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-template-columns: repeat(3, 1fr); 
     gap: 2rem;
     margin-top: 2rem;
   }
