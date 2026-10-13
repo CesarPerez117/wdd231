@@ -1,0 +1,26 @@
+[
+    {
+        "name": "La Bandera",
+        "image": "images/la-bandera.webp",
+        "alt": "La Bandera - Dominican Dish",
+        "description": "Rice, beans, and meat — the national dish of the Dominican Republic, symbolizing unity and tradition."
+    },
+    {
+        "name": "Mangú",
+        "image": "images/mangu.webp",
+        "alt": "Mangú - Dominican Dish",
+        "description": "Mashed plantains served with salami, cheese, and eggs, often enjoyed as a hearty breakfast."
+    },
+    {
+        "name": "Sancocho",
+        "image": "images/sancocho.webp",
+        "alt": "Sancocho - Dominican Dish",
+        "description": "A rich stew made with meats, root vegetables, and corn, often prepared for family gatherings and celebrations."
+    },
+    {
+        "name": "Tostones",
+        "image": "images/tostones.webp",
+        "alt": "Tostones - Dominican Dish",
+        "description": "Twice-fried plantains, crispy and golden, served as a side dish or snack across the country."
+    }
+]
