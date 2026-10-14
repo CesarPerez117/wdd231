@@ -2,7 +2,7 @@
     {
         "name": "El Sancocho Dominicano",
         "location": "Santo Domingo",
-        "style": "family",
+        "style": ["Family","Casual","Fine"],
         "dishes": [
             "Sancocho",
             "La Bandera",
@@ -15,7 +15,7 @@
     {
         "name": "La Bandera Gourmet",
         "location": "Santiago",
-        "style": "fine",
+        "style": ["Family","Casual","Fine"],
         "dishes": [
             "La Bandera",
             "Pastelón"
@@ -27,7 +27,7 @@
     {
         "name": "Mangú Express",
         "location": "Santo Domingo",
-        "style": "casual",
+        "style": ["Family","Casual","Fine"],
         "dishes": [
             "Mangú",
             "Tostones",
@@ -40,7 +40,7 @@
     {
         "name": "Casa del Mofongo",
         "location": "Puerto Plata",
-        "style": "family",
+        "style": ["Family","Casual","Fine"],
         "dishes": [
             "Mofongo",
             "Tostones",
@@ -53,7 +53,7 @@
     {
         "name": "Pastelón Criollo",
         "location": "La Romana",
-        "style": "fine",
+        "style": ["Family","Casual","Fine"],
         "dishes": [
             "Pastelón",
             "La Bandera",
@@ -66,7 +66,7 @@
     {
         "name": "Tostones y Más",
         "location": "San Cristóbal",
-        "style": "casual",
+        "style": ["Family","Casual"],
         "dishes": [
             "Tostones",
             "Mangú",
@@ -79,7 +79,7 @@
     {
         "name": "Sabores de Quisqueya",
         "location": "Santo Domingo",
-        "style": "fine",
+        "style": ["Family","Casual","Fine"],
         "dishes": [
             "Sancocho",
             "Pastelón",
@@ -92,7 +92,7 @@
     {
         "name": "Habichuelas Dulces Café",
         "location": "Bonao",
-        "style": "family",
+        "style": ["Family","Casual"],
         "dishes": [
             "Habichuelas con Dulce",
             "Mangú",
