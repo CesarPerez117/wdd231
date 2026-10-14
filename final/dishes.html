@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dominican Gastronomy | Dishes</title>
+    <meta name="description" content="Featured Dominican dishes with recipes, cultural meaning, and fun facts.">
+    <meta name="author" content="Cesar Ernesto Perez Pineda">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-large.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-small.png">
+
+    <!-- OG Meta -->
+    <meta property="og:title" content="Dominican Gastronomy | Featured Dishes">
+    <meta property="og:description"
+        content="Explore traditional Dominican dishes like Mofongo, Pastelón, and Habichuelas con Dulce — complete with recipes, cultural meaning, and fun facts.">
+    <meta property="og:image" content="https://cesarperez117.github.io/wdd231/final/images/final-dishes-hero-large.webp">
+    <meta property="og:url" content="https://cesarperez117.github.io/wdd231/final/dishes.html">
+    <meta property="og:type" content="website">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Mulish:wght@300;400;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./styles/final-normalize.css">
+    <link rel="stylesheet" href="./styles/final-small.css">
+    <link rel="stylesheet" href="./styles/final-large.css" media="(min-width: 768px)">
+</head>
+
+<body>
+    <header>
+        <div class="brand">
+            <img src="images/gastronomy-logo.webp" alt="Dominican Gastronomy Logo" class="logo">
+        </div>
+        <h1>Traditional Dishes</h1>
+        <nav>
+            <button id="menu-toggle" aria-label="Toggle Menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul id="nav-list">
+                <li><a href="https://cesarperez117.github.io/wdd231/final/index.html">Home</a></li>
+                <li><a href="https://cesarperez117.github.io/wdd231/final/dishes.html" class="active">Dishes</a></li>
+                <li><a href="https://cesarperez117.github.io/wdd231/final/finder.html">Finder</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <picture>
+                <source srcset="images/final-dishes-hero-large.webp" media="(min-width: 1025px)">
+                <source srcset="images/final-dishes-hero-medium.webp" media="(min-width: 601px)">
+                <img src="images/final-dishes-hero-small.webp" alt="Dominican Dishes Hero">
+            </picture>
+            <div class="hero-text">
+                <h2>Discover Traditional Dominican Dishes</h2>
+                <p>Explore recipes, cultural meaning, and fun facts.</p>
+            </div>
+        </section>
+
+        <section id="dishes">
+            <h2>Featured Dishes</h2>
+            <div id="dishes-grid"></div>
+        </section>
+
+        <!-- Modals injected -->
+        <section id="dish-modals"></section>
+    </main>
+
+    <footer>
+        <div class="footer-left">
+            <p>Contact: gastronomy_tribute@dominicanfood.com</p>
+            <p>&copy; <span id="year"></span> Dominican Gastronomy Project</p>
+        </div>
+        <div class="footer-center">
+            <div class="social-icons">
+                <a href="#"><img src="images/facebook-color.svg" alt="Facebook"></a>
+                <a href="#"><img src="images/instagram-color.svg" alt="Instagram"></a>
+                <a href="#"><img src="images/youtube-color.svg" alt="YouTube"></a>
+            </div>
+        </div>
+        <div class="footer-right">
+            <p>Cesar Perez | WDD 231</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+
+    <script src="scripts/final.js" defer></script>
+</body>
+
+</html>

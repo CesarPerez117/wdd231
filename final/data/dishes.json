@@ -3,24 +3,218 @@
         "name": "La Bandera",
         "image": "images/la-bandera.webp",
         "alt": "La Bandera - Dominican Dish",
-        "description": "Rice, beans, and meat — the national dish of the Dominican Republic, symbolizing unity and tradition."
+        "description": "Rice, beans, and meat — the national dish of the Dominican Republic, symbolizing unity and tradition.",
+        "culturalMeaning": "La Bandera represents the Dominican flag, symbolizing unity and national pride through food.",
+        "ingredients": [
+            "White rice",
+            "Red beans",
+            "Chicken or beef",
+            "Lettuce",
+            "Tomato",
+            "Avocado",
+            "Cooking oil",
+            "Garlic",
+            "Onion"
+        ],
+        "steps": [
+            "Cook rice until fluffy.",
+            "Prepare stewed beans with garlic, onion, and spices.",
+            "Season and cook meat (chicken or beef).",
+            "Serve rice, beans, and meat together with salad."
+        ],
+        "funFacts": [
+            "It is called 'La Bandera' because the colors resemble the Dominican flag.",
+            "Most Dominicans eat this dish daily for lunch."
+        ]
     },
     {
         "name": "Mangú",
         "image": "images/mangu.webp",
         "alt": "Mangú - Dominican Dish",
-        "description": "Mashed plantains served with salami, cheese, and eggs, often enjoyed as a hearty breakfast."
+        "description": "Mashed plantains served with salami, cheese, and eggs, often enjoyed as a hearty breakfast.",
+        "culturalMeaning": "Mangú is a breakfast staple that reflects African influence and Dominican comfort food traditions.",
+        "ingredients": [
+            "Green plantains",
+            "Butter",
+            "Salt",
+            "Fried salami",
+            "Fried cheese",
+            "Fried eggs"
+        ],
+        "steps": [
+            "Boil plantains until soft.",
+            "Mash with butter and salt.",
+            "Serve with fried salami, cheese, and eggs.",
+            "Enjoy hot as a hearty breakfast."
+        ],
+        "funFacts": [
+            "Mangú is often called 'Los Tres Golpes' when served with salami, cheese, and eggs.",
+            "It is a symbol of Dominican hospitality and family breakfasts."
+        ]
     },
     {
         "name": "Sancocho",
         "image": "images/sancocho.webp",
         "alt": "Sancocho - Dominican Dish",
-        "description": "A rich stew made with meats, root vegetables, and corn, often prepared for family gatherings and celebrations."
+        "description": "A rich stew made with meats, root vegetables, and corn, often prepared for family gatherings and celebrations.",
+        "culturalMeaning": "Sancocho is a celebratory dish, often cooked for special occasions and family reunions.",
+        "ingredients": [
+            "Chicken",
+            "Beef",
+            "Pork",
+            "Yuca (cassava)",
+            "Plantains",
+            "Potatoes",
+            "Corn on the cob",
+            "Oregano",
+            "Garlic",
+            "Cilantro"
+        ],
+        "steps": [
+            "Season meats with spices and marinate.",
+            "Brown meats, then add water to create broth.",
+            "Add root vegetables and plantains.",
+            "Simmer until thick and hearty.",
+            "Serve hot with rice or avocado."
+        ],
+        "funFacts": [
+            "Dominicans often say 'un buen sancocho cura todo' (a good sancocho cures everything).",
+            "There are versions with seven meats, considered the most traditional."
+        ]
     },
     {
         "name": "Tostones",
         "image": "images/tostones.webp",
         "alt": "Tostones - Dominican Dish",
-        "description": "Twice-fried plantains, crispy and golden, served as a side dish or snack across the country."
+        "description": "Twice-fried plantains, crispy and golden, served as a side dish or snack across the country.",
+        "culturalMeaning": "Tostones are a versatile snack that highlight the importance of plantains in Dominican cuisine.",
+        "ingredients": [
+            "Green plantains",
+            "Salt",
+            "Oil for frying"
+        ],
+        "steps": [
+            "Peel and slice plantains.",
+            "Fry slices until golden, then flatten.",
+            "Fry again until crispy.",
+            "Sprinkle with salt and serve with dipping sauce."
+        ],
+        "funFacts": [
+            "Tostones are popular across Latin America, but Dominicans often serve them with garlic sauce.",
+            "They are a common side dish with fried meats or seafood.",
+            "Street vendors frequently sell tostones as a quick snack."
+        ]
+    },
+    {
+        "name": "Mofongo",
+        "image": "images/mofongo.webp",
+        "alt": "Mofongo - Dominican Dish",
+        "description": "Mashed fried plantains mixed with garlic, pork cracklings, and broth.",
+        "culturalMeaning": "Mofongo represents the fusion of African and Caribbean culinary traditions, symbolizing resilience and creativity in Dominican cuisine.",
+        "ingredients": [
+            "Green plantains",
+            "Garlic",
+            "Chicharrón (pork cracklings)",
+            "Chicken broth",
+            "Salt",
+            "Pepper"
+        ],
+        "steps": [
+            "Peel and slice plantains, then fry until golden.",
+            "Mash fried plantains with garlic and chicharrón.",
+            "Add broth gradually to achieve a soft texture.",
+            "Shape into a ball or serve in a bowl.",
+            "Top with meat, seafood, or vegetables."
+        ],
+        "funFacts": [
+            "Mofongo is also popular in Puerto Rico, but the Dominican version often uses more broth.",
+            "It is considered a comfort food and is commonly served with chicken or shrimp."
+        ]
+    },
+    {
+        "name": "Pastelón",
+        "image": "images/pastelon.webp",
+        "alt": "Pastelón - Dominican Dish",
+        "description": "A layered casserole of sweet plantains, ground beef, and cheese.",
+        "culturalMeaning": "Pastelón is often called the Dominican lasagna, showcasing the blend of local ingredients with European influences.",
+        "ingredients": [
+            "Ripe plantains",
+            "Ground beef",
+            "Onions",
+            "Peppers",
+            "Garlic",
+            "Tomato sauce",
+            "Cheese (mozzarella or cheddar)",
+            "Eggs"
+        ],
+        "steps": [
+            "Peel and slice ripe plantains, fry until golden.",
+            "Cook ground beef with onions, peppers, garlic, and tomato sauce.",
+            "Layer fried plantains, beef mixture, and cheese in a baking dish.",
+            "Pour beaten eggs over the layers to bind.",
+            "Bake until golden and set."
+        ],
+        "funFacts": [
+            "Pastelón is a festive dish often served at family gatherings and holidays.",
+            "Its sweet‑savory flavor makes it unique compared to Italian lasagna."
+        ]
+    },
+    {
+        "name": "Habichuelas con Dulce",
+        "image": "images/habichuelas-dulce.webp",
+        "alt": "Habichuelas con Dulce - Dominican Dessert",
+        "description": "A sweet bean dessert made with red beans, coconut milk, and spices.",
+        "culturalMeaning": "This dessert is a symbol of Dominican Easter traditions, shared among families and neighbors during Holy Week.",
+        "ingredients": [
+            "Red beans",
+            "Coconut milk",
+            "Evaporated milk",
+            "Sugar",
+            "Cinnamon sticks",
+            "Cloves",
+            "Raisins",
+            "Sweet potato chunks"
+        ],
+        "steps": [
+            "Boil red beans until soft, then blend into a smooth puree.",
+            "Cook beans with coconut milk, evaporated milk, sugar, and spices.",
+            "Add raisins and sweet potato chunks.",
+            "Simmer until thick and creamy.",
+            "Serve chilled, often with cookies or crackers."
+        ],
+        "funFacts": [
+            "Habichuelas con Dulce is unique to the Dominican Republic — few countries turn beans into dessert.",
+            "It is so popular during Easter that supermarkets stock special kits with all ingredients."
+        ]
+    },
+    {
+        "name": "Locrio",
+        "image": "images/locrio.webp",
+        "alt": "Locrio - Dominican Dish",
+        "description": "A flavorful rice dish cooked with seasoned meat, vegetables, and spices, often compared to paella.",
+        "culturalMeaning": "Locrio is a staple of Dominican home cooking, symbolizing practicality and flavor in everyday meals.",
+        "ingredients": [
+            "White rice",
+            "Chicken or pork",
+            "Bell peppers",
+            "Onion",
+            "Garlic",
+            "Tomato paste",
+            "Oil",
+            "Salt",
+            "Pepper",
+            "Cilantro"
+        ],
+        "steps": [
+            "Season meat with garlic, salt, pepper, and spices.",
+            "Brown meat in oil, then add onions, peppers, and tomato paste.",
+            "Add rice and stir to coat with seasonings.",
+            "Pour in water or broth, cover, and cook until rice is tender.",
+            "Fluff rice and garnish with cilantro before serving."
+        ],
+        "funFacts": [
+            "Locrio is considered the Dominican version of paella, but simpler and more rustic.",
+            "It’s a versatile dish — families prepare it with chicken, pork, or even sardines depending on availability."
+        ]
     }
 ]
