@@ -144,7 +144,6 @@ nav a {
     color: var(--color-text);
 }
 
-/* CTA */
 .cta {
     background-color: var(--color-accent);
     color: var(--color-text);
@@ -159,7 +158,6 @@ nav a {
     background-color: var(--color-highlight);
 }
 
-/* Section headings (base) */
 section h2 {
     text-align: center;
     font-weight: 700;
@@ -168,7 +166,6 @@ section h2 {
     font-size: 1.4rem;
 }
 
-/* Sections base */
 #roots,
 #identity {
     background-color: var(--color-secondary);
@@ -343,7 +340,6 @@ button:focus {
 
 /* DISHES SECTION */
 
-/* Modal (dialog) small*/
 dialog {
     border: none;
     border-radius: 8px;
@@ -396,4 +392,94 @@ dialog .close-modal:hover {
 
 dialog::backdrop {
     background: rgba(0, 0, 0, 0.5);
+}
+
+/* Finder section (small) */
+#finder {
+    padding: 16px;
+    margin: 0 auto;
+}
+
+#finder h2 {
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--color-accent);
+    margin-bottom: 12px;
+}
+
+#finder-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    background-color: var(--color-secondary);
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(55, 61, 32, 0.12);
+}
+
+#finder-form label {
+    font-weight: 600;
+    color: var(--color-bg);
+    font-size: 0.95rem;
+}
+
+#finder-form select {
+    padding: 8px;
+    border: 1px solid var(--color-bg);
+    border-radius: 6px;
+    font-size: 0.95rem;
+    background-color: #fff;
+    color: var(--color-bg);
+}
+
+.finder-cta {
+    background-color: var(--color-accent);
+    color: var(--color-text);
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    margin-top: 8px;
+    align-self: center;
+}
+
+.finder-cta:hover {
+    background-color: var(--color-highlight);
+}
+
+#results {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.finder-card {
+    background-color: var(--color-secondary);
+    border-radius: 10px;
+    padding: 16px;
+    box-shadow: 0 2px 6px rgba(55, 61, 32, 0.12);
+    text-align: left;
+}
+
+.finder-card h3 {
+    margin: 0 0 8px;
+    font-size: 1.2rem;
+    color: var(--color-accent);
+}
+
+.finder-card p {
+    margin: 4px 0;
+    font-size: 0.95rem;
+    color: var(--color-bg);
+}
+
+#map {
+    margin-top: 20px;
+    height: 300px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(55, 61, 32, 0.16);
 }

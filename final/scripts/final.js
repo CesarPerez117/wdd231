@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   menuToggle.addEventListener("click", () => {
     navList.classList.toggle("active");
-    menuToggle.classList.toggle("active"); // activates animation to X
+    menuToggle.classList.toggle("active");
   });
 });
 
@@ -23,10 +23,9 @@ document.addEventListener("DOMContentLoaded", () => {
   fetch("data/dishes.json")
     .then(response => response.json())
     .then(dishes => {
-      // Detect if we are on the home page (no modals section)
+
       const isHomePage = !modalsContainer;
 
-      // --- Section 1: Featured Dishes (cards only) ---
       let dishesToShow = dishes;
 
       if (isHomePage) {
@@ -48,7 +47,6 @@ document.addEventListener("DOMContentLoaded", () => {
         dishesGrid.appendChild(card);
       });
 
-      // --- Section 2: Dish Modals (only on Featured Dishes page) ---
       if (!isHomePage) {
         dishes.forEach(dish => {
           if (dish.ingredients) {

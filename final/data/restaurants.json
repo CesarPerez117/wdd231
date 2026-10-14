@@ -1,0 +1,105 @@
+[
+    {
+        "name": "El Sancocho Dominicano",
+        "location": "Santo Domingo",
+        "style": "family",
+        "dishes": [
+            "Sancocho",
+            "La Bandera",
+            "Mangú"
+        ],
+        "hours": "Mon-Sun: 11:00 AM - 10:00 PM",
+        "lat": 18.4861,
+        "lng": -69.9312
+    },
+    {
+        "name": "La Bandera Gourmet",
+        "location": "Santiago",
+        "style": "fine",
+        "dishes": [
+            "La Bandera",
+            "Pastelón"
+        ],
+        "hours": "Tue-Sat: 12:00 PM - 11:00 PM",
+        "lat": 19.4500,
+        "lng": -70.7000
+    },
+    {
+        "name": "Mangú Express",
+        "location": "Santo Domingo",
+        "style": "casual",
+        "dishes": [
+            "Mangú",
+            "Tostones",
+            "Mofongo"
+        ],
+        "hours": "Daily: 7:00 AM - 9:00 PM",
+        "lat": 18.4800,
+        "lng": -69.9200
+    },
+    {
+        "name": "Casa del Mofongo",
+        "location": "Puerto Plata",
+        "style": "family",
+        "dishes": [
+            "Mofongo",
+            "Tostones",
+            "Sancocho"
+        ],
+        "hours": "Mon-Sun: 12:00 PM - 10:00 PM",
+        "lat": 19.7950,
+        "lng": -70.6900
+    },
+    {
+        "name": "Pastelón Criollo",
+        "location": "La Romana",
+        "style": "fine",
+        "dishes": [
+            "Pastelón",
+            "La Bandera",
+            "Habichuelas con Dulce"
+        ],
+        "hours": "Wed-Sun: 1:00 PM - 11:00 PM",
+        "lat": 18.4300,
+        "lng": -68.9700
+    },
+    {
+        "name": "Tostones y Más",
+        "location": "San Cristóbal",
+        "style": "casual",
+        "dishes": [
+            "Tostones",
+            "Mangú",
+            "Chicharrón"
+        ],
+        "hours": "Daily: 10:00 AM - 8:00 PM",
+        "lat": 18.4167,
+        "lng": -70.1333
+    },
+    {
+        "name": "Sabores de Quisqueya",
+        "location": "Santo Domingo",
+        "style": "fine",
+        "dishes": [
+            "Sancocho",
+            "Pastelón",
+            "La Bandera"
+        ],
+        "hours": "Mon-Sat: 12:00 PM - 11:00 PM",
+        "lat": 18.4700,
+        "lng": -69.9300
+    },
+    {
+        "name": "Habichuelas Dulces Café",
+        "location": "Bonao",
+        "style": "family",
+        "dishes": [
+            "Habichuelas con Dulce",
+            "Mangú",
+            "Tostones"
+        ],
+        "hours": "Fri-Sun: 9:00 AM - 7:00 PM",
+        "lat": 18.9333,
+        "lng": -70.4167
+    }
+]

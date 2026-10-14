@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dominican Gastronomy | Finder</title>
+    <meta name="description" content="Find restaurants serving Dominican dishes near you.">
+    <meta name="author" content="Cesar Ernesto Perez Pineda">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-large.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-small.png">
+
+    <!-- OG Meta -->
+    <meta property="og:title" content="Dominican Gastronomy | Restaurant Finder">
+    <meta property="og:description"
+        content="Find Dominican restaurants near you by dish, location, and dining style. Explore authentic Dominican cuisine with our interactive finder.">
+    <meta property="og:image" content="https://cesarperez117.github.io/wdd231/final/images/gastronomy-logo.webp">
+    <meta property="og:url" content="https://cesarperez117.github.io/wdd231/final/finder.html">
+    <meta property="og:type" content="website">
+
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Mulish:wght@300;400;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./styles/final-normalize.css">
+    <link rel="stylesheet" href="./styles/final-small.css">
+    <link rel="stylesheet" href="./styles/final-large.css" media="(min-width: 768px)">
+
+    <!-- Leaflet API-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="brand">
+            <img src="images/gastronomy-logo.webp" alt="Dominican Gastronomy Logo" class="logo">
+        </div>
+        <h1>Restaurant Finder</h1>
+        <nav>
+            <button id="menu-toggle" aria-label="Toggle Menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul id="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="dishes.html">Dishes</a></li>
+                <li><a href="finder.html" class="active">Finder</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="finder">
+            <h2>Find Dominican Restaurants</h2>
+            <form id="finder-form">
+                <label for="dish">Dish Name:</label>
+                <select id="dish" name="dish">
+                    <option value="">-- Select a Dish --</option>
+                </select>
+
+                <label for="location">Your Location:</label>
+                <select id="location" name="location">
+                    <option value="">-- Select a Location --</option>
+                </select>
+
+
+                <label for="style">Dining Style:</label>
+                <select id="style" name="style">
+                    <option value="casual">Casual</option>
+                    <option value="family">Family</option>
+                    <option value="fine">Fine Dining</option>
+                </select>
+
+                <button type="submit" class="finder-cta">Find Restaurants</button>
+            </form>
+
+            <div id="results"></div>
+            <div id="map" style="height: 400px; width: 100%; margin-top: 20px;"></div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-left">
+            <p>Contact: gastronomy_tribute@dominicanfood.com</p>
+            <p>&copy; <span id="year"></span> Dominican Gastronomy Project</p>
+        </div>
+        <div class="footer-center">
+            <div class="social-icons">
+                <a href="#"><img src="images/facebook-color.svg" alt="Facebook"></a>
+                <a href="#"><img src="images/instagram-color.svg" alt="Instagram"></a>
+                <a href="#"><img src="images/youtube-color.svg" alt="YouTube"></a>
+            </div>
+        </div>
+        <div class="footer-right">
+            <p>Cesar Perez | WDD 231</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+
+    <script src="scripts/final.js" defer></script>
+    <script src="scripts/finder.js" defer></script>
+</body>
+
+</html>
