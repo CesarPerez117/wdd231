@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const dishSelect = document.getElementById("dish");
     const locationSelect = document.getElementById("location");
 
-    fetch("data/dishes.json")
+    fetch("./data/dishes.json")
         .then(response => response.json())
         .then(dishes => {
             const dishNames = [...new Set(dishes.map(d => d.name))];
@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
             });
         });
 
-    fetch("data/restaurants.json")
+    fetch("./data/restaurants.json")
         .then(response => response.json())
         .then(restaurants => {
             const locations = [...new Set(restaurants.map(r => r.location))];
