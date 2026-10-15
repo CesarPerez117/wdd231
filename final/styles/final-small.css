@@ -45,7 +45,7 @@ header .logo {
     border-radius: 10px;
 }
 
-header h1 {
+header h2 {
     font-size: 1.25rem;
     font-weight: 700;
     margin: 0;
@@ -395,7 +395,7 @@ dialog::backdrop {
     margin: 0 auto;
 }
 
-#finder h2 {
+#finder h1 {
     text-align: center;
     font-size: 1.4rem;
     font-weight: 700;
