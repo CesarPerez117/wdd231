@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 const filtered = restaurants.filter(r =>
                     r.dishes.some(d => d.toLowerCase().includes(dish)) &&
                     r.location.toLowerCase().includes(location) &&
-                    r.style === style
+                    r.style.toLowerCase() === style.toLowerCase()
                 );
 
                 if (filtered.length > 0) {
