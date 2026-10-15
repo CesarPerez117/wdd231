@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", () => {
             if (layer instanceof L.Marker) map.removeLayer(layer);
         });
 
-        fetch("data/restaurants.json")
+        fetch("./data/restaurants.json")
             .then(response => response.json())
             .then(restaurants => {
                 const filtered = restaurants.filter(r =>
