@@ -35,13 +35,14 @@
 
     <!-- Leaflet API-->
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js" defer></script>
 </head>
 
 <body>
     <header>
         <div class="brand">
-            <img src="images/gastronomy-logo.webp" alt="Dominican Gastronomy Logo" class="logo">
+            <img src="images/gastronomy-logo.webp" alt="Dominican Gastronomy Logo" class="logo" width="58" height="48"
+                fetchpriority="high" decoding="async">
         </div>
         <h2>Restaurant Finder</h2>
         <nav>
