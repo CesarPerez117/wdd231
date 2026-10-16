@@ -1,4 +1,3 @@
-
 // Wait until the DOM (HTML structure) is fully loaded before running the script
 document.addEventListener("DOMContentLoaded", () => {
     const dishSelect = document.getElementById("dish");
@@ -104,4 +103,3 @@ document.addEventListener("DOMContentLoaded", () => {
             });
     });
 });
-

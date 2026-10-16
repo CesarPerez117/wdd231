@@ -333,6 +333,11 @@ button:focus {
     outline-offset: 2px;
 }
 
+#loom {
+  color: #ffffff;       /* blanco */
+  text-decoration: none; /* opcional, quita el subrayado */
+}
+
 
 /* DISHES SECTION */
 
