@@ -39,7 +39,10 @@ document.addEventListener("DOMContentLoaded", () => {
         const card = document.createElement("div");
         card.classList.add("dish-card");
         card.innerHTML = `
-          <img src="${dish.image}" alt="${dish.alt}" loading="lazy">
+          <img src="${dish.image}" 
+          alt="${dish.alt}"
+          width="400" height="200"
+          loading="lazy">
           <h3>${dish.name}</h3>
           <p>${dish.description}</p>
           ${!isHomePage && dish.ingredients ? `<button class="cta" data-dish="${dish.name}">View Recipe</button>` : ""}

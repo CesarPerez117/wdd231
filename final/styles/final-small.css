@@ -290,6 +290,7 @@ footer {
     background-color: var(--color-bg);
     color: var(--color-text);
     border-radius: 5px;
+    min-height: 120px;
 }
 
 .footer-left,
